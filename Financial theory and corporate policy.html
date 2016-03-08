@@ -1,0 +1,1243 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<title>Financial theory and corporate policy</title></head><body><article class="markdown-body"><h1 id="financial-theory-and-corporate-policy-3rd-ed"><a name="user-content-financial-theory-and-corporate-policy-3rd-ed" href="#financial-theory-and-corporate-policy-3rd-ed" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Financial theory and corporate policy, 3rd ed.</h1>
+<h3 id="by-copelandweston"><a name="user-content-by-copelandweston" href="#by-copelandweston" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>by Copeland/Weston</h3>
+<h2 id="introduction"><a name="user-content-introduction" href="#introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introduction</h2>
+<p>This book is a second course MBA or first course PhD in Economics. I&rsquo;m reading it for a number of reasons:</p>
+<ol>
+<li>I never understood economics as an academic field</li>
+<li>I want to understand the basic terminology of economics</li>
+<li>I want to understand what assumptions are made in basic economics</li>
+<li>I want to understand how to model economically<br />
+    a. A person<br />
+    b. A company<br />
+    c. A set of companies</li>
+<li>I want to understand different financial instruments, and how to price them</li>
+<li>I want to write a domain specific language (DSL) that is able to model some of the above</li>
+</ol>
+<h2 id="chapter-1"><a name="user-content-chapter-1" href="#chapter-1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chapter 1</h2>
+<ul>
+<li>Robinson Crusoe - one person, one-good economy. </li>
+<li>Consume vs. not consume. </li>
+<li>Not consume = investing =&gt; subjective interest rate.</li>
+<li>Interest rate = price of deferred consumptions = rate of return of investment.</li>
+</ul>
+<h3 id="do-capital-markets-benefit-society"><a name="user-content-do-capital-markets-benefit-society" href="#do-capital-markets-benefit-society" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Do &ldquo;capital markets benefit society&rdquo;?</h3>
+<p><strong>Assumptions:</strong></p>
+<ol>
+<li>All outcomes from investment known with certainty</li>
+<li>No transaction costs or taxes</li>
+<li>Decisions made in one-period context $(y_0, y_1)$</li>
+<li>Marginal utility of consumption is decreasing</li>
+<li>Every individual prefer more consumption to less =&gt; marginal utility of consumption is positive</li>
+</ol>
+<p>imagine plot of $\sqrt(x)$</p>
+<p>How much to consume now $C_0$ and how much at the end of period $C_1$?</p>
+<p>Plot utility $U$ on plane $(C_0, C_1)$. Level-sets of this graph are called <em>indifference curves</em>.</p>
+<p>For Robin Crusoe any point on an indifference curve gives the same utility.</p>
+<p>The derivative at a point is called the <em>marginal rate of substitution</em> ($MRS$) between consumption today and consumption tomorrow. We can think of it as an interest rate. We have $$MRS = -(1+r_i).$$</p>
+<p>Let&rsquo;s assume we have productive opportunities $(PO)$. It can be given by any function of investment that is decreasing (refer to 4. above).</p>
+<p>Robin will make an investment in this productive opportunity if the return-rate is higher than the subjective rate of return $r_i$.</p>
+<p>Look at $PO$ and find $$B = \max(\frac{dPO}{dC_0}).$$ This is the <em>marginal rate of transformation</em> $(MRT)$. Now plot the curve $U_2$ for which we have the same tangent at $B$. This is the utility curve for which Robin with initial utility curve $C_0$ can move to by utilizing $PO$. This is because for Robin $MRS = MRT$.</p>
+<p>Without the existance of capital markets, invividuals with different indifference curves <em>will choose different investments</em> $(y_0, y_1)$ even if they have the same <em>endownment</em> and the same <em>investment opportunity</em> because they have different indifference curves. </p>
+<p>We now let Robin borrow at a market rate. For a given point $A$ on his indifference curve $U_1$ we can now find a point $B$ on a curve $U_3$ for which the tangent equals the market rate. If we also allow production in this setting, Robin is able to offset his $U_2$ determined by $PO$ to an $U_3$ which is strictly larger than $U_1$. The separation of these two steps is called the <em>Fisher separation theorem</em>.</p>
+<p>Answering the question &ldquo;capital markets benefit society&rdquo; amounts to showing that for a given indifference curve, we can always find a curve over a given indifference curve if the individuals can exchange intertemporal consumption amongst themselves.</p>
+<p>By introducing $PO$ and market rate borrowing, we have shown that Robin is better off.</p>
+<p>It <em>also</em> shows that even if two investors have different indifference-curves, they will choose the same investment strategy under this mode. As a result, all borrowers and lenders are better off with capital markets than without. This means that the manager of a firm will be able to single-handedly find the best investment strategy.</p>
+<h3 id="transaction-costs"><a name="user-content-transaction-costs" href="#transaction-costs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Transaction costs</h3>
+<p>If transaction costs are non-trivial, we understand that a central market-place becomes important. The economical service provied by the market-place implies that <strong>lending rates and borrowing rates <em>differ</em></strong>, thus invalidating the Fischer separation principle and the manager will no longer delegated the responsibiliry to decide the investment. Hence, perfect (friction-less) markets makes it much more convenient to model economical decisions but it is arguable a false assumption.</p>
+<h2 id="chapter-2"><a name="user-content-chapter-2" href="#chapter-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chapter 2</h2>
+<h3 id="investment-decisions"><a name="user-content-investment-decisions" href="#investment-decisions" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Investment decisions</h3>
+<p><strong>Assumptions</strong></p>
+<ol>
+<li>Intertemporal decisions made on knowledge of market-determined time value of money, ie interest rate.</li>
+<li>Interest rate known with certainty in all time periods, ie non-stochastic.</li>
+<li>All future payoff from current investment is known with certainty.</li>
+<li>Perfect markets ie no transaction-costs.</li>
+</ol>
+<h3 id="synopsis"><a name="user-content-synopsis" href="#synopsis" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Synopsis</h3>
+<p>Main point is that the objective of the firm is to maximize the wealth of its shareholders = maximize present value of shareholders lifetime consumption = maximizing the price per stock.</p>
+<p>This is also the same as the <em>discounted value of future expected cash flows</em>. The technique for project selection which is consistent with maximizing shareholder wealth is <em>net present value criterion</em>.</p>
+<h3 id="fisher-separation"><a name="user-content-fisher-separation" href="#fisher-separation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Fisher separation</h3>
+<p>Since we have Fisher separation, we can let a manager optimize the investment decisions since even if we have different indifference curves between share hoders, we know that they will have maximal investment positions, ie they&rsquo;d vote the same in a board meeting. This is called the <em>unanimity principle</em>.</p>
+<p>Caveat: if there&rsquo;s a cost for investors to monitor the decisions made by the manager, this changes.</p>
+<p>We now assume that managers always behave as to maximize the shareholders wealth. What methods can they use?</p>
+<p>The discounted value after-tax cash-flows payed out is the same as the stream of dividends and is</p>
+<p>$$S_0 = \sum_{0}^{\infinity} \frac{Div_t}{(1 + k_s)^t}$$ where $S_0$ is the present value of shareholders wealth, and $k_s$ is the market-determined rate of return on equity capital. Interestingly, capital gains are built into this formula. This means that the present value of the stock is the same whether an investor holds it forever of for a finite time. The value after that finite time is exactly the future dividends from that time on.</p>
+<h3 id="profit"><a name="user-content-profit" href="#profit" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Profit</h3>
+<p>In economics, porofits mean the rates of return in excess of the opportunity costs for funds employed in projects of <em>equal risk</em>. The main difference between accounting profits and economits&rsquo; profits is that the former doesn&rsquo;t focus on cash-flows and when they occur. It only looks at net income and it doesn&rsquo;t maximze shareholders&rsquo; wealth.</p>
+<h3 id="net-present-value-npv"><a name="user-content-net-present-value-npv" href="#net-present-value-npv" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Net Present Value (NPV)</h3>
+<p>We want the method to choose projects to satisfy:</p>
+<ol>
+<li>All cash flows are considered</li>
+<li>The cash flow should be discounted at the opportunity cost of funds</li>
+<li>Should select from a set of mutually exclusive projects the one that maximizes shareholders&rsquo; wealth, ie don&rsquo;t build a wooden and a steel bridge.</li>
+<li>The value-additivity prinicple holds, ie one should be able to consider one project independently of the others.</li>
+</ol>
+<p>The method that satisfies this is the Net present value:<br />
+$$ NPV = \sum_{1}^{N} \frac{NCF_t}{(1 + k)^t} - I_0 $$ where $NCF_t$ is the net cash flow in time period $t$, $I_0$ is initial cash outlay and $k$ is the firm&rsquo;s weighted average cost of capital and $N$ is the number of years in the project.</p>
+<p>As long as $NPV &gt; 0$ for a project, the manager should invest in it, as it is exactly the same as the increase in shareholders&rsquo; wealth.</p>
+<p>There&rsquo;s empirical evidence that the moment an industrial firm announces an investment, the stock prive is correlating with the expected gains and losses. For public firms there&rsquo;s no correlation since they are regulated and only earn their weighted average cost of capital.</p>
+<h2 id="chapter-3"><a name="user-content-chapter-3" href="#chapter-3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chapter 3</h2>
+<p>Chapter 2 dealth with projects in the same scale and period.</p>
+<h3 id="project-lengths"><a name="user-content-project-lengths" href="#project-lengths" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Project lengths</h3>
+<p>For projects with different lives the correct way to evaluate them is to assume that they are repeated indefinitely and in exactly the same way. One can show that the NPV is the correct method to use here as well, and there&rsquo;s a way to find the correct length of a project (for example when to harvest a forest) going on repeatedly using the same method.</p>
+<h3 id="capital-constraints"><a name="user-content-capital-constraints" href="#capital-constraints" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Capital constraints</h3>
+<p>Although a mangager should aways invest if the $NPV &gt; 0$, for certain reasons, there can be contraints on the capital that the firm can use. For example two project could have </p>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Cost</th>
+<th>NPV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>$100000</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$1000</td>
+<td>$50</td>
+</tr>
+</tbody>
+</table>
+<p>Project A should always be choosen if there are no constraints, but $100000 is a lot of money! For example, the <em>Penrose effect</em> might kick in, which says that it is not econmically feasible to grow aribtrarily because of management and personel costs. For example, it is not really feasible to grow more than 50% per year. But generally a firm can always raise capital if $NPV$ is positive.</p>
+<p>For a given set of projects, the manager should choose the subset that</p>
+<ol>
+<li>is below the budget constraints</li>
+<li>maximizes the NPV</li>
+</ol>
+<p>This method is called the <em>present value index</em> ($PVI$). </p>
+<p>If we have capital constraints and multiple periods, we look to <em>integer programming</em> to find the optimal investment strategy. However, since capital constraints are difficult to motivate to begin with and due to that linear programming models have difficulty to incorporate uncertainty, it is less popular than imagined (written 1992).</p>
+<h3 id="inflation"><a name="user-content-inflation" href="#inflation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Inflation</h3>
+<p>With inflation affecting cash outflows differently than cash inflows a project with a positive NPV might be rejected after corrections for inflation. There&rsquo;s some controversy on what models to use here. It does not automatically affect the NPV negatively however, just more accurately.</p>
+<h3 id="uncertainty-term-structure-of-interest-rates"><a name="user-content-uncertainty-term-structure-of-interest-rates" href="#uncertainty-term-structure-of-interest-rates" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Uncertainty (term structure of interest rates)</h3>
+<p>(Kind of skipping here)</p>
+<p>If we cannot assume interest rate to be constant, it gets more complicated:</p>
+<ol>
+<li>Buy and sell bonds on expected interest rate (arbitrage)</li>
+<li>Risk averse investors will require higher yields in order to hold longer-term bounds. The extra yield is calld the <em>liquidity premium</em> (LP). Empirically one can statistically observe LP up to 8-9 months. The high variability therafter made it impossible to draw conclusions.</li>
+<li>Market segmentaion: different firms have different loan-demands. Ie long-term projects need long-term debt. Firms want to match their capital payments according to their cash-flows.</li>
+</ol>
+<h2 id="chapter-4"><a name="user-content-chapter-4" href="#chapter-4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Chapter 4.</h2>
+<h3 id="utility"><a name="user-content-utility" href="#utility" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Utility</h3>
+<p>Individuals have different indifference curves. Moreover, they have different utility functions. So economics doesn&rsquo;t say anything about them (although later in the chapter there are some rather poor argument as for <em>why</em> that is).</p>
+<p>All we assume, are five axioms of choice under utility:</p>
+<p><strong>(Axioms of carninal utility)</strong></p>
+<ol>
+<li>(Comparability/completeness) For two alternatives $x, y \in S$ we have either $x \succ y$ or $y \succ x$ or $x \sim y$ (indifferent).</li>
+<li>(Transitivity/consistency) If $x \succ y$ and $y \succ z$ then $x \succ z$.</li>
+<li>(Strong independence) Let $G(x,y;\alpha)$ be the gamble with probability $\alpha$ of $x$ and $(1-\alpha)$ of $y$. Let $z$ be mutually exclusive of $x, y$. Then $x \sim y =&gt; G(x,z;\alpha) \sim G(y,z;\alpha)$.</li>
+<li>(Measureability) If $x \succ y \succ z$ then there exists $\alpha$ s.t. $y \sim G(x,z;\alpha)$.</li>
+<li>(Ranking) $G$ preserves ordering, ie if $x \succ u \succ z$ and $x \succ v \succ z$ and $u \sim G(x,z;\alpha)$ and $v \sim G(x,z,\beta)$ then $\beta \succ \alpha =&gt; v \succ u$.</li>
+</ol>
+<p>They mean that individuals are rational and able to make decisions over arbitrarily many alternatives. Axiom 3 is usually the most controversial. Imagine if $x$ is winning a left shoe and $y$ a right shoe. $z$ is also winning a right shoe. They are mutually exlusive but 3. tells us that after after winning a left or a right shoe, we don&rsquo;t care about winning a second right shoe.</p>
+<ol>
+<li>We assume individuals to be greedy, ie marginal utility of wealth is always positive.</li>
+</ol>
+<p>Utility is about establishing utility functions using the above axioms that apply without knowing individuals indifference curves.</p>
+<p>Two properties:</p>
+<ol>
+<li>Utility functions are order preserving, ie $x \succ y =&gt; U(x) \succ U(y)$.</li>
+<li>Utility is linear: $ U[G(x,y;\alpha)] = \alpha * U(x) + (1-\alpha) * U(y) $.</li>
+</ol>
+<p>So by assigning gambles to choice we can calculate expected utitity (which we will maximize).</p>
+<p>Here the book makes some silly claims about the impossibility of comparing the individuals utility functions:</p>
+<ol>
+<li>Give $100 to two individuals. Both experience increase in utility. &ldquo;Who&rsquo;s increased more? It is impossible to say!&rdquo;</li>
+<li>&ldquo;Interpersonal comparison of utiity functions are impossible.&rdquo; <strong>Argument:</strong> &ldquo;If it were not, we could establish a social welfare function that would combine everyone&rsquo;s utility and we could then use it to solve such problems as the optimal distribution of wealth. We could maximize society&rsquo;s utility by taking wealth from individual $i$ and giving it to individual $j$. However, it is not possible to know how real-world utility functions for different individuals should be aggregated. It follows that group utility functions, such as the utility function of a firm, have no meaning&rdquo;. This is a circular argument!</li>
+</ol>
+<h3 id="risk-aversion"><a name="user-content-risk-aversion" href="#risk-aversion" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Risk aversion</h3>
+<p>Since we can convert the axioms of utility into a utility function we can compare utility functions. If we set up a gamble between two prospects $x$ and $y$, ie $G(x,y;\alpha)$ will we prefer the expected value of the gamble or the gamble itself?</p>
+<table>
+<thead>
+<tr>
+<th>U</th>
+<th>Type</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U[E(W)] &gt; E[U(W)]$</td>
+<td>risk aversion</td>
+<td>risk function concave</td>
+</tr>
+<tr>
+<td>$U[E(W)] = E[U(W)]$</td>
+<td>risk indifferent</td>
+<td>risk function linear</td>
+</tr>
+<tr>
+<td>$U[E(W)] &lt; E[U(W)]$</td>
+<td>risk loving</td>
+<td>risk function convex</td>
+</tr>
+</tbody>
+</table>
+<p>We can also talk about <em>(markowitz) risk premium</em>, the price an individual is willing to pay to avoid the gamble. This is calculated from the individual&rsquo;s utility function. If she is offered an insurance against the gamble which is below this price, she will buy it.</p>
+<p>We will now assume the individual is risk averse. One can look at <em>relative risk aversion</em> $(RRA)$ (following Pratt-Arrow)</p>
+<p>$$RRA = -W U&rsquo;&lsquo;(W)/U&rsquo;(W)$$ which is absolute risk aversion_ multiplied by weight. Emperical data (and intuition) dictates that a utility function will have the following properties:</p>
+<ol>
+<li>Marginal utility of wealth &gt; 0</li>
+<li>Utility decreases with increasing wealth</li>
+<li>ARA decreases with wealth</li>
+<li>RRA is constant</li>
+</ol>
+<p>This discounts a quadratic utility function often used in the literature. Instead it suggests a <em>power utility function</em></p>
+<p>$$U(W) = W^{-1},$$<br />
+$$U&rsquo;(W) = W^{-2} &gt; 0,$$<br />
+$$U&rsquo;&lsquo;(W) = -2 W^{-3} &lt; 0$$</p>
+<h3 id="stochastic-dominance"><a name="user-content-stochastic-dominance" href="#stochastic-dominance" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Stochastic dominance</h3>
+<p>We use cumulative distribution functions to compare assets.</p>
+<p>First-order stochastic dominance applies to any increasing utility function. </p>
+<p>$$F_x(W) &lt;= G_y(W)  \text{ for all }  W$$</p>
+<p>Second order stochastic dominance applies to risk-averse utility functions.</p>
+<p>$$\int_{-\infty}^{W_1} [G_y(W) - F_x(W)]dW) &gt;= 0  \text{ for all }  W$$</p>
+<p>These are criterions independent of the individuals utility functions.</p>
+<h3 id="mean-and-variance"><a name="user-content-mean-and-variance" href="#mean-and-variance" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Mean and variance</h3>
+<p>If we assume that probability distribtions are normal, we can resort to just calculating combinations by their mean and variance. The indifference curves for a risk-averse investor becomes functions of mean and variance.</p></article></body></html>
